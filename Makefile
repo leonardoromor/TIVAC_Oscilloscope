@@ -85,7 +85,3 @@ clean:
 	-$(RM) $(OUTDIR)/*
 
 .PHONY: all clean
-
-
-usb.x: bulk_usb_reader.c
-	gcc -o $@ $^ -lusb
